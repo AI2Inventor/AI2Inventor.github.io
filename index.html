@@ -4,6 +4,13 @@
   <title>哈尔滨工业大学</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
   <style>
+      #demo {
+          font-family: Arial, Helvetica, sans-serif; /* This sets the font */
+          font-size: 60px; /* This sets the font size */
+          color: red; /* This sets the color of the text */
+          text-align: center; /* This sets the text to the center */
+           
+      }
       body {
           font-size: 20px;
           background-image: url('bg1.jpg');
@@ -21,48 +28,56 @@
   </style>
 </head>
 <body>
-  <div align="center">
-    <h1>哈尔滨工业大学  统一身份认证</h1>
-    <form action="https://ids.hit.edu.cn/authserver/login?type=qrcode&service=http%3A%2F%2Fi.hit.edu.cn%2Fcas%2Flogin_portal" method="get">
-      
-      <div class="container">
+    <div align="center">
+        <h1>哈尔滨工业大学  统一身份认证</h1>
+        <form action="https://ids.hit.edu.cn/authserver/login?type=qrcode&service=http%3A%2F%2Fi.hit.edu.cn%2Fcas%2Flogin_portal" method="get">
 
-            <label for="uname"><b></b></label><br>
-            <input type="text" placeholder="请输入学号/工号" name="uname" required>
+            <div class="container">
 
-            <label for="psw"><b></b></label><br>
-            <input type="password" placeholder="请输入密码" name="psw" required><br>
+                <label for="uname"><b></b></label><br>
+                <input type="text" placeholder="请输入学号/工号" name="uname" required>
 
-            <button type="submit">登录</button>
-            <button type="button" class="cancelbtn">取消</button>
-        </div>
+                <label for="psw"><b></b></label><br>
+                <input type="password" placeholder="请输入密码" name="psw" required><br>
 
-        <div class="container" style="background-color:#f1f1f1">
+                <button type="submit">登录</button>
+                <button type="button" class="cancelbtn">取消</button>
+            </div>
 
-
-        </div>
-      
-    </form>
+            <div class="container" style="background-color:#f1f1f1">
 
 
-    <h2></h2>
-    <p>
+            </div>
+
+        </form>
+        <p id="demo"></p>
+
+        <script>
+            // 设置一个间隔来每秒执行一次 updateTime 函数
+            setInterval(updateTime, 1000);
+
+            function updateTime() {
+                var d = new Date();
+                document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+            }
+        </script>
+
+        <h2></h2>
+        <p>
+            请关注微信公众号：
+        </p>
+
+        <img src="3.jpg" alt="我的图片" width="230" height="230" /><br>
+        <img src="微信.jpg" alt="我的图片" width="200" height="300" />
+        <img src="支付宝.jpg" alt="我的图片" width="200" height="300" /><br>
+    </div>
 
 
 
-        请关注微信公众号：
-    </p>
-   
-   
-    <img src="3.jpg" alt="我的图片" width="230" height="230" /><br>
-    <img src="微信.jpg" alt="我的图片" width="200" height="300" />
-    <img src="支付宝.jpg" alt="我的图片" width="200" height="300" /><br>
 
 
 
-  </div>
-
-</body >
+</body>
 
 
 
