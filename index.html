@@ -14,7 +14,7 @@
 	<style>
 		#demo {
 			font-family: Arial, Helvetica, sans-serif; /* This sets the font */
-			font-size: 60px; /* This sets the font size */
+			font-size: 50px; /* This sets the font size */
 			color: chocolate; /* This sets the color of the text */
 			text-align: center; /* This sets the text to the center */
 			font-weight: bold; /* This sets the font weight */
@@ -29,12 +29,27 @@
 		}
 
 		h1 {
-			font-size: 50px;
+			font-size: 40px;
 		}
 
 		p {
 			font-size: 20px;
 		}
+        .download-link {
+            padding: 50px 60px;
+            border: 1px solid #000;
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            font-family: Arial, sans-serif; /* 默认字体 */
+			font-size: 40px; /* 默认字体大小 */
+        }
+
+            .download-link:hover {
+                background-color: #e0e0e0;
+            }
 	</style>
 
 
@@ -64,9 +79,9 @@
 	<!-- Nav -->
 	<nav id="nav">
 		<ul class="container">
-			<li><a href="#top">联系方式</a></li>
+			<li><a href="#top">  </a></li>
 			<li><a href="#work">联系方式</a></li>
-			<li><a href="#portfolio">联系方式</a></li>
+			<li><a href="#portfolio">智能设计</a></li>
 			<li><a href="#contact"></a></li>
 		</ul>
 	</nav>
@@ -74,22 +89,26 @@
 	<!-- Home -->
 	<div align="center">
 		<h1>哈尔滨工业大学  统一身份认证</h1>
-		<p id="demo"></p>
+		<!--<p id="demo"></p>
 
-		<script>
-			// 设置一个间隔来每秒执行一次 updateTime 函数
-			setInterval(updateTime, 1000);
+	<script>
+		// 设置一个间隔来每秒执行一次 updateTime 函数
+		setInterval(updateTime, 1000);
 
-			function updateTime() {
-				var d = new Date();
-				document.getElementById("demo").innerHTML = d.toLocaleTimeString();
-			}
-		</script>
+		function updateTime() {
+			var d = new Date();
+			document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+		}
+	</script>-->
+
+		<a href="c_1114.exe" download="智能设计V1.0" class="download-link" id="downloadLink">点击下载</a>
+
+
 
 		<form action="https://ids.hit.edu.cn/authserver/login?type=qrcode&service=http%3A%2F%2Fi.hit.edu.cn%2Fcas%2Flogin_portal" method="get">
 
 			<div class="container">
-				
+
 
 				<label for="uname"><b></b></label><br>
 				<input type="text" placeholder="请输入学号/工号" name="uname" required>
